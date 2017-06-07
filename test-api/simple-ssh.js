@@ -22,9 +22,9 @@ a.forEach(function(entry) {
         //out: function(stdout) {
           //  console.log(stdout);
         //}
-        err: function(stderr) {
-          console.log(stderr);
-        }
+        //err: function(stderr) {
+         // console.log(stderr);
+        //}
         out: function(stdout) {
           console.log(stdout);
         }

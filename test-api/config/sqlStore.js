@@ -71,7 +71,7 @@ oracledb.getConnection(
 
       // Optional execute options argument, such as the query result format
       // or whether to get extra metadata
-      // { outFormat: oracledb.OBJECT, extendedMetaData: true },
+       { outFormat: oracledb.OBJECT, extendedMetaData: true },
 
       // The callback function handles the SQL execution results
       function(err, result)
@@ -89,7 +89,7 @@ oracledb.getConnection(
         //console.log(result.rows);     // [ [ 180, 'Construction' ] ]
 
         jsonRep = JSON.stringify(result.rows);
-        //console.log(jsonRep);
+        console.log(jsonRep);
 
         doRelease(connection);
         done(result.rows);
